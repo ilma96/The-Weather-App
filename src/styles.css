@@ -1,6 +1,7 @@
 body {
   font-family: arial, sans-serif;
 }
+
 h1 {
   color: #6c717a;
   font-size: 24px;
@@ -23,22 +24,23 @@ li {
   font-weight: 100;
   line-height: 19px;
 }
-li::first-letter {
+
+li:first-letter {
   text-transform: capitalize;
 }
+
 .weather-app-wrapper {
-  max-width: 600px;
-  margin: 28px auto;
+  max-width: 650px;
+  margin: 30px auto;
 }
+
 .weather-app {
-  border: 1px solid #ffffff;
-  padding: 25px;
-  margin: 50px auto;
-  border-radius: 30px;
+  padding: 30px;
+  border: 1px solid #dadde1;
+  border-radius: 20px;
   background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
 }
-.form-control,
-shadow-sm {
+.row .shadow-sm {
   background: radial-gradient(
     328px at 2.9% 15%,
     rgb(191, 224, 251) 0%,
@@ -47,27 +49,22 @@ shadow-sm {
     rgb(234, 251, 251) 77.6%,
     rgb(240, 251, 244) 100.7%
   );
-
+  border-color: #ffffff;
+  border-radius: 10px;
   color: #35302f;
   transition: all 200ms ease;
   box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
 }
-.shadow-sm {
-  font-size: 16px;
-  color:#6c717a;
-  padding: 10px 20px;
-  border-radius: 20px;
-  border-color: #ffffff;
-}
-.shadow-sm:hover {
+.row .shadow-sm:hover {
   color: #5e4844;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 17px;
   border-color: #ffffff;
 }
 .overview {
   margin-bottom: 20px;
 }
+
 .weather-icon img {
   margin-right: 5px;
   height: 64px;
@@ -75,26 +72,18 @@ shadow-sm {
 }
 
 .weather-icon strong {
-  color: #191e26;
-  position: relative;
-  top: -55px;
-  left: 65px;
-  font-size: 48px;
-  font-weight: 500;
+  color: rgb(33, 33, 33);
+  font-size: 64px;
   line-height: 1;
+  font-weight: 400;
 }
 
 .weather-icon .units {
   position: relative;
-  top: -80px;
-  left: 65px;
+  font-size: 16px;
+  top: -34px;
 }
-.weather-icon .unit-fahrenheit {
-  position: relative;
-  top: -25px;
-  left: 75px;
-  color: #191e26;
-}
+
 .weather-icon .active {
   color: #191e26;
   cursor: default;
